@@ -1,22 +1,40 @@
-import logo from './logo.svg';
+import React from "react";
+import CompTest from "./Compoent_test";
+
+
+// Component
+function Food(props) {
+
+// props.favor == {favor}
+  console.log(props);
+
+  return (
+    <div>
+      <h3> comp test 2</h3>
+      <h2> Food props : {props.favor} </h2>
+    </div>
+  );
+}
+
+function Food2({favor2}) {
+  return (
+    <div>
+      <h1> Food 2 props : {favor2}</h1>
+    </div>
+  );
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1> helo</h1>
+      <CompTest />
+      {/* props */}
+      <Food favor="props favor" />
+      <Food2 favor2={12}/>
+      <Food2 favor2="test2"/>
+      <Food2 favor2="third"/>
+      <Food2 favor2="포쓰"/>
     </div>
   );
 }
