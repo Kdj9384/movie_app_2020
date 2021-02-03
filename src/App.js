@@ -20,6 +20,7 @@ class App extends React.Component { // parent
   state = {
     isLoading : true,
     movies : [],
+    test : [],
   }
 
   componentDidMount() {
