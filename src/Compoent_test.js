@@ -1,9 +1,17 @@
 import React from "react";
+import Food from "./Food";
+import ClassComponent from "./Counter";
 
-function CompTest() {
+function TestCase() {
   return (
-    <h1> Compoennt Test</h1>
+    <div>
+      <Food/>
+      <p>-----------------------------------------------</p>
+      <br/>
+      <ClassComponent/>
+    </div>
+    
   )
 }
 
-export default CompTest;
+export default TestCase;

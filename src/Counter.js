@@ -1,9 +1,9 @@
 import React from "react";
 
-function funcComponent() { // function component!!
+function FuncComponent() { // function component!!
   return (
     <div>
-
+      functionComponents
     </div>
   );
 }
@@ -63,6 +63,7 @@ function Counter() { // parent
       <p>-----------------------------------------------</p>
       <br/>
       <ClassComponent/>
+      <FuncComponent/>
     </div>
   );
 }
